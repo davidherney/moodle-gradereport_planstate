@@ -27,3 +27,6 @@ $string['gradesplanstate'] = 'Plan state';
 $string['pluginname'] = 'Plan state report';
 $string['privacy:metadata'] = 'The Grade plan state report only shows data stored in other locations.';
 $string['planstate:view'] = 'View the plan state report';
+$string['idcategories'] = 'Id categories';
+$string['idcategories_help'] = 'Only show categories with these ids.  For example:<br />
+1, 2, 3';

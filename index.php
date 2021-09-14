@@ -94,7 +94,26 @@ grade_regrade_final_grades_if_required($course);
 $categories = $DB->get_records('course_categories', array('visible' => 1), 'sortorder ASC');
 $hascourses = false;
 
+$idcategories = explode(',', $CFG->grade_report_planstate_idcategories);
+
+$availablecategories = array();
+foreach ($idcategories as $oneid) {
+    $oneid = trim($oneid);
+    if (!empty($oneid)) {
+        $availablecategories[] = (int)$oneid;
+    }
+}
+
+if (count($availablecategories) == 0) {
+    $availablecategories = null;
+}
+
 foreach ($categories as $category) {
+
+    if ($availablecategories && !in_array($category->id, $availablecategories)) {
+        continue;
+    }
+
     // Create a report instance
     $report = new grade_report_planstate($userid, $gpr, $context, $category->id);
 

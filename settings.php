@@ -34,4 +34,13 @@ if ($ADMIN->fulltree) {
                                                       array(GRADE_REPORT_HIDE_TOTAL_IF_CONTAINS_HIDDEN => get_string('hide'),
                                                             GRADE_REPORT_SHOW_TOTAL_IF_CONTAINS_HIDDEN => get_string('hidetotalshowexhiddenitems', 'grades'),
                                                             GRADE_REPORT_SHOW_REAL_TOTAL_IF_CONTAINS_HIDDEN => get_string('hidetotalshowinchiddenitems', 'grades') )));
+
+
+    // Visible categories.
+    $name = 'grade_report_planstate_idcategories';
+    $title = get_string('idcategories', 'gradereport_planstate');
+    $help = get_string('idcategories_help', 'gradereport_planstate');
+    $setting = new admin_setting_configtextarea($name, $title, $help, '');
+    $settings->add($setting);
+
 }

@@ -27,3 +27,6 @@ $string['gradesplanstate'] = 'Estado del plan de estudio';
 $string['pluginname'] = 'Plan de estudio';
 $string['privacy:metadata'] = 'El reporte del plan de estudio solamente muestra información ya almacenada en el sistema.';
 $string['planstate:view'] = 'Ver el reporte de estado del plan de estudios';
+$string['idcategories'] = 'Id de categorías';
+$string['idcategories_help'] = 'Solamente mostrar las categorías con los siguientes id. Indique los id separados por coma, por ejemplo:<br />
+1, 2, 3';
