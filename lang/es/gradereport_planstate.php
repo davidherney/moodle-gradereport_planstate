@@ -15,15 +15,15 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_planstate', language 'en'
+ * Strings for component 'gradereport_planstate', language 'es'
  *
  * @package   gradereport_planstate
  * @copyright 2021 David Herney - cirano
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['eventgradereportviewed'] = 'Grade plan state report viewed';
-$string['gradesplanstate'] = 'Plan state';
-$string['pluginname'] = 'Plan state report';
-$string['privacy:metadata'] = 'The Grade plan state report only shows data stored in other locations.';
-$string['planstate:view'] = 'View the plan state report';
+$string['eventgradereportviewed'] = 'Estado del plan de calificación visualizado';
+$string['gradesplanstate'] = 'Estado del plan de estudio';
+$string['pluginname'] = 'Plan de estudio';
+$string['privacy:metadata'] = 'El reporte del plan de estudio solamente muestra información ya almacenada en el sistema.';
+$string['planstate:view'] = 'Ver el reporte de estado del plan de estudios';

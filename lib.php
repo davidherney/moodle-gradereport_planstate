@@ -489,7 +489,7 @@ function gradereport_planstate_myprofile_navigation(core_user\output\myprofile\t
     $coursecontext = context_course::instance($course->id);
     if (grade_report_planstate::check_access($systemcontext, $coursecontext, $usercontext, $course, $user->id)) {
         $url = new moodle_url('/grade/report/planstate/index.php', array('userid' => $user->id, 'id' => $course->id));
-        $node = new core_user\output\myprofile\node('reports', 'grades', get_string('gradesplanstate', 'gradereport_planstate'),
+        $node = new core_user\output\myprofile\node('reports', 'planstate', get_string('gradesplanstate', 'gradereport_planstate'),
                 null, $url);
         $tree->add_node($node);
     }
